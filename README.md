@@ -18,7 +18,7 @@ Projeto desenvolvido junto ao site
 <br>
 
 <p align="center">
-  <img alt="projeto landing page" src=".github/landing-page.jpg" width="100%">
+  <img alt="projeto landing page" src=".github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
