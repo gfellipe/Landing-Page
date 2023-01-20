@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display&display=swap");
+
+:root {
+  --text-color: #646161;
+  --bg-button: #064ee9c0;
+  --font-family: "Lato", sans-serif;
+  --font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(241, 232, 232, 0.986);
+}
+
+/* Style Header */
+.main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2.562vw;
+}
+
+.content-logo {
+  display: flex;
+  justify-content: center;
+  gap: 0.878vw;
+}
+
+.btn-button-logo {
+  border-radius: 3.66vw;
+  border: none;
+  padding: 0.586vw 1.318vw;
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 0.878vw;
+  background: linear-gradient(to right,rgba(230, 163, 39, 0.781), rgba(218, 48, 48, 0.678));
+}
+
+.item {
+  color: var(--text-color);
+  font-weight: var(--font-weigth);
+  font-family: var(--font-family);
+  text-decoration: none;
+  padding-right: 1.464vw;
+}
+
+.content-registration a {
+  color: var(--text-color);
+  font-weight: var(--font-weigth);
+  font-family: var(--font-family);
+  text-decoration: none;
+  padding-right: 1.464vw;
+}
+
+.btn-button-registration {
+  color: #fff;
+  font-family: var(--font-family);
+  padding: 1.171vw 1.245vw;
+  border: none;
+  border-radius: 0.22vw;
+  background: var(--bg-button);
+  cursor: pointer;
+}
+
+/* Style menu mobile */
+.mobile-menu-icon {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+/* Style Main */
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-main {
+  width: 35%;
+}
+
+.content-main h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.66vw;
+  font-weight: bold;
+  margin-top: 7vw;
+  line-height: 4.4vw;
+}
+
+.content-main p {
+  color: var(--text-color);
+  font-weight: var(--font-weigth);
+  font-family: var(--font-family);
+  margin: 1.098vw 0;
+}
+
+.content-main span {
+  display: block;
+}
+
+.box-text input {
+  font-family: var(--font-family);
+  font-size: 1em;
+  border: none;
+  margin: 0.366vw 0 1.098vw;
+  padding: 0.878vw 4.026vw;
+}
+
+.box-text button {
+  color: #fff;
+  font-family: var(--font-family);
+  padding: 1.171vw 1.245vw;
+  border: none;
+  border-radius: 0.22vw;
+  background: var(--bg-button);
+  margin-left: 0.586vw;
+  cursor: pointer;
+}
+
+.box-checkbox label {
+  color: var(--text-color);
+  font-weight: var(--font-weigth);
+  font-family: var(--font-family);
+  margin-left: 0.732vw;
+}
+
+.content-img {
+  width: 28vw;
+  margin-top: 3vw;
+  position: relative;
+}
+
+.content-img .image {
+  position: absolute;
+}
+
+.content-img .image:nth-of-type(1) {
+  z-index: 4;
+  width: 22vw;
+}
+
+.content-img .image:nth-of-type(2) {
+  z-index: 1;
+  width: 22vw;
+  height: 24vw;
+  transform: rotate(-45deg);
+}
+
+.content-img .image:nth-of-type(3) {
+  z-index: 2;
+  width: 22vw;
+  height: 25vw;
+  transform: rotate(-33deg);
+}
+
+.content-img .image:nth-of-type(4) {
+  z-index: 3;
+  width: 22vw;
+  height: 25vw;
+  transform: rotate(-15deg);
+}
+
+/* Style footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6.5vw;
+  flex-wrap: wrap;
+}
+
+.social-medias {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 1.83vw;
+  color: var(--text-color);
+  font-weight: var(--font-weigth);
+  font-family: var(--font-family);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.container-text {
+  margin-left: 0.732vw;
+}
+
+.container-text .text-container:nth-child(2) {
+  font-weight: bold;
+}
+
+
+
+
+/* Landscape phones to portrait tablet */
+@media (max-width: 767px) { 
+  .btn-button-logo {
+    font-size: 1.5vw;
+  }
+
+  .item {
+    display: none;
+  }
+
+  .content-registration {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    bottom: 1rem;
+  }
+
+  .menu-mobile .item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .menu-mobile .btn-button-registration {
+    display: block;
+    padding: 1rem 2rem;
+  }
+
+  .menu-mobile .btn-button-registration {
+    width: 50%;
+    margin: 2vw auto;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .content-img {
+    position: absolute;
+    top: 50px;
+    left: 30vw;
+    width: 100%;
+  }
+
+  .content-img .image:nth-of-type(1) {
+    z-index: 4;
+    width: 40vw;
+  }
+  
+  .content-img .image:nth-of-type(2) {
+    z-index: 1;
+    width: 38vw;
+    height: 42vw;
+    transform: rotate(-45deg);
+  }
+  
+  .content-img .image:nth-of-type(3) {
+    z-index: 2;
+    width: 38vw;
+    height: 45vw;
+    transform: rotate(-33deg);
+  }
+  
+  .content-img .image:nth-of-type(4) {
+    z-index: 3;
+    width: 38vw;
+    height: 45vw;
+    transform: rotate(-15deg);
+  }
+
+  .content-main {
+    width: 90%;
+    margin-top: 42vw;
+  }
+
+  .content-main h1 {
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+
+  .content-main p {
+    width: 90%;
+    margin: 3vw 0 1.5vw;
+  }
+
+  .content-main span {
+    display: inline-block;
+  }
+  
+  .box-text {
+    margin-bottom: 2vw;
+  }
+
+  footer {
+    margin-bottom: 5vw;
+  }
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+  .content-main {
+    font-size: 1.3vw;
+  }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1200px) { 
+  .content-main span {
+    display: inline-block;
+  }
+
+  .box-text {
+    display: flex;
+  }
+
+  .box-text button {
+    padding: 0.5vw 5vw;
+    margin-bottom: 2vw;
+  }
+
+  .box-checkbox label {
+    font-size: 1.6vw;
+  }
+}
+
+
+ /* Landscape phones and down */
+@media (max-width: 480px) {
+  .btn-button-logo {
+    font-size: 2.5vw;
+  }
+
+  .content-img .image{
+    position: absolute;
+    top: 7vw;
+    left: -20vw;
+    width: 100%;
+  }
+
+  .content-img .image:nth-of-type(1) {
+    z-index: 4;
+    width: 60vw;
+  }
+  
+  .content-img .image:nth-of-type(2) {
+    z-index: 1;
+    width: 65vw;
+    height: 68vw;
+    transform: rotate(-45deg);
+  }
+  
+  .content-img .image:nth-of-type(3) {
+    z-index: 2;
+    width: 65vw;
+    height: 68vw;
+    transform: rotate(-33deg);
+  }
+  
+  .content-img .image:nth-of-type(4) {
+    z-index: 3;
+    width: 65vw;
+    height: 71vw;
+    transform: rotate(-15deg);
+  }
+
+  .content-main h1 {
+    width: 80%;
+    margin-top: 35vw;
+    font-size: 10vw;
+    line-height: 13vw;
+  }
+
+  .content-main p {
+    width: 90%;
+    font-size: 4vw;
+    margin-bottom: 4vw;
+  }
+
+  .box-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-text input {
+    padding: 5vw;
+    margin-bottom: 3vw;
+  }
+
+  .box-text button {
+    padding: 4vw;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5vw;
+  }
+
+  .social-medias {
+    display: flex;
+    gap: 7vw;
+    margin: 5vw 0 8vw;
+  }
+
+  .text-container {
+    padding-left: 3vw;
+  }
+}
+
